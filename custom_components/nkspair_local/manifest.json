@@ -1,0 +1,15 @@
+{
+  "domain": "nkspair_local",
+  "name": "NKSPAIR Smart",
+  "codeowners": ["@himank"],
+  "config_flow": true,
+  "documentation": "https://github.com/aniket/esp32_control",
+  "iot_class": "local_push",
+  "version": "0.0.2",
+  "requirements": ["aiomqtt>=2.5.0"],
+  "zeroconf": [
+    {
+      "type": "_nkspair._tcp.local."
+    }
+  ]
+}

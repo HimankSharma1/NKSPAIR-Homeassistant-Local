@@ -1,0 +1,27 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Manual Device Setup",
+        "description": "Enter the Device ID of your NKSPAIR hardware to pair it manually.",
+        "data": {
+          "device_id": "Device ID (e.g., nkspair_smartlink_150984)"
+        }
+      },
+      "zeroconf_confirm": {
+        "title": "Discovered Device",
+        "description": "Found {name} with ID: {id}\n\nDo you want to add this device to Home Assistant?"
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to the device. Make sure it is powered on and connected to the network.",
+      "device_not_found": "Device not found. Please make sure the device is powered on and connected to your local network.",
+      "unsupported_device": "Device validation failed: Manufacturer or Model mismatch."
+    },
+    "abort": {
+      "cannot_connect": "Failed to connect to the device. Make sure it is powered on and connected to the network.",
+      "already_configured": "This device is already paired.",
+      "unsupported_device": "Device validation failed: Manufacturer or Model mismatch."
+    }
+  }
+}
